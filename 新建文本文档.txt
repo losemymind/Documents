@@ -1,0 +1,31 @@
+因为要接入 google_breakpad ，dump分析工具必须要在 linux下运行，所以要安装linux系统。
+
+由于需要在mac下使用ubuntu环境，如果要建一个虚拟机太费事了，还费内存，现在使用vagrant非常简单，这里记录一下
+
+首先安装 https://github.com/phinze/homebrew-cask，这个brew的一个扩展命名，能够通过命令行安装dmg的应用
+
+$ brew tap phinze/cask
+
+$ brew install brew-cask
+
+安装vagrant与virtualbox
+
+$ brew cask install vagrant
+$ brew cask install virtualbox
+下载ubuntu的box
+
+$ mkdir ubuntu
+$ cd ubuntu
+
+安装wget，如果安装过跳过这条命令
+
+$ brew Install wget
+$ wget http://files.vagrantup.com/precise32.box
+创建与初始化ubuntu box
+
+$ vagrant box add ubuntu ./precise32.box
+$ vagrant init ubuntu
+接下来就可以使用ssh登录了
+
+$ vagrant up
+$ vagrant ssh

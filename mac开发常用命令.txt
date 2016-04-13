@@ -1,0 +1,2 @@
+system_profiler SPUSBDataType
+列出系统 usb 设备信息
