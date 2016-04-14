@@ -1,0 +1,20 @@
+1.先执行 sudo add-apt-repository ppa:ubuntu-toolchain-r/test，如果提示 add-apt-repository command not found.执行下面的命令：
+sudo apt-get install software-properties-common python-software-properties
+
+2.执行如下命令安装GCC：
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get install gcc-4.8
+sudo apt-get install g++-4.8
+
+3.如果系统有多份GCC，使用下面的命令更新GCC（举一反三）：
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.6
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 80 --slave /usr/bin/g++ g++ /usr/bin/g++-4.8
+sudo update-alternatives --config gcc
+
+4.链接 gcc4.8 为gcc
+sudo su
+cd ../../usr/bin
+ln -s /usr/bin/g++-4.8 /usr/bin/g++ -f
+ln -s /usr/bin/gcc-4.8 /usr/bin/gcc -f
