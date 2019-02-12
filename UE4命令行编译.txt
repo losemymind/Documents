@@ -1,0 +1,9 @@
+client
+
+"E:\GitHub\UnrealEngine\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project="F:\Projects\UnrealProjects\Classes002\Classes002.uproject" -noP4 -platform=Win64 -clientconfig=Development -serverconfig=Development -cook -allmaps -build -stage -pak -archive -archivedirectory="F:\Projects\UnrealProjects\Classes002\Windows\Client_Build_%BUILD_ID%"
+
+server
+
+"E:\GitHub\UnrealEngine\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project="F:\Projects\UnrealProjects\Classes002\Classes002.uproject" -noP4 -platform=Win64 -clientconfig=Development -serverconfig=Development -cook -server -serverplatform=Win64 -noclient -build -stage -pak -archive -archivedirectory="F:\Projects\UnrealProjects\Classes002\Windows\Server_Build_%BUILD_ID%"
+
+
