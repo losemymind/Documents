@@ -1,0 +1,17 @@
+Android SDK 在线更新镜像服务器
+
+中国科学院开源协会镜像站地址:
+http://mirrors.opencas.cn 端口：80
+http://mirrors.opencas.org 端口：80
+http://mirrors.opencas.ac.cn 端口：80
+上海 GDG 镜像服务器地址:
+http://sdk.gdgshanghai.com 端口：8000
+北京化工大学镜像服务器地址:
+http://ubuntu.buct.edu.cn/ 端口：80
+http://ubuntu.buct.cn/ 端口：80
+http://ubuntu.buct6.edu.cn/ 端口：80
+大连东软信息学院镜像服务器地址:
+http://mirrors.neusoft.edu.cn 端口：80
+腾讯 Bugly 镜像:
+http://android-mirror.bugly.qq.com 端口：8080
+输入镜像地址时不要带 http://，并且选中：Force https://… sources to be fetched using http://… 的复选框。然后点击 Close 返回主界面即可。如果使用腾讯 Bugly 镜像，则需要另外添加插件地址
